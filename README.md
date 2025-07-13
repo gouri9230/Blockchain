@@ -1,2 +1,3 @@
 # Blockchain
-My personal contracts and projects for learning purpose
+This repo contains my Solidity learning journey, where I experiment with different solidity features and smart contract patterns.
+My personal projects for learning purpose.
