@@ -40,9 +40,9 @@ contract GreedyBanker {
 
     function withdraw(uint256 amount) external payable {
         require(balances[msg.sender] >= amount, "you do not have enough balance to withdraw");
+        balances[msg.sender] -= amount;
         (bool success,) = msg.sender.call{value: amount}("");
         require(success);
-        balances[msg.sender] -= amount;
     }
 
     function collectFees() external {
